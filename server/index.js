@@ -4,10 +4,14 @@ import cors from "cors"
 import userRoute from "./router/user.route.js"
 import productRoute from "./router/product.route.js"
 import cookieParser from "cookie-parser";
+import dotenv from 'dotenv';
+
+
 
 
 const app=express();
 
+dotenv.config();
 
 app.use(cors({
   origin: "https://inventory-dashboard-backend-dobt.onrender.com",  
