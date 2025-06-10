@@ -14,7 +14,7 @@ const app=express();
 dotenv.config();
 
 app.use(cors({
-  origin: "https://inventory-dashboard-backend-dobt.onrender.com",  
+  origin: "https://inventory-dashboard-client.onrender.com",  
   credentials: true
 }));
 app.use(express.json());
